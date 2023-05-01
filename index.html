@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>petGame2</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="stat-screen">
+            <div class="stat"><span class="name">Fome</span><div class="bar-color"><div id="hungry" class="filler"></div></div></div>
+            <div class="stat"><span class="name">Energia</span><div class="bar-color"><div id="energy" class="filler"></div></div></div>
+            <div class="stat"><span class="name">Higiente</span><div class="bar-color"><div id="hygiene" class="filler"></div></div></div>
+            <div class="stat"><span class="name">Social</span><div class="bar-color"><div id="social" class="filler"></div></div></div>
+            <div class="stat" ><span class="name">Diversão</span><div class="bar-color"><div id="fun" class="filler"></div></div></div>
+        </div>
+        <div class="pet">
+            <div class="eyes"></div>
+            <div class="eyes"></div>
+        </div>
+        <div class="action-menu">
+            <div class="btn"onclick="changeBar(this.dataset.name)" data-name="hungry"><span class="name">Comida</span></div>
+            <div class="btn"onclick="changeBar(this.dataset.name)" data-name="energy"><span class="name">Dormir</span></div>
+            <div class="btn"onclick="changeBar(this.dataset.name)" data-name="hygiene"><span class="name">Banho</span></div>
+            <div class="btn"onclick="changeBar(this.dataset.name)" data-name="social"><span class="name">Conversar</span></div>
+            <div class="btn"onclick="changeBar(this.dataset.name)" data-name="fun"><span class="name">Brincar</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet {
+    background-color: #fdd000;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    /* flex-direction: row; */
+    padding-left: 33px;
+    padding-right: 33px;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.pet:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.eyes {
+    background-color: #f2efe2;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.action-menu {
+    width: 350px;
+    height: 700px;
+    background-color: #fdd000;
+    position: absolute;
+    right: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    color: #f2efe2;
+    background-color: #1E232B;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #3B3F46;
+    cursor: pointer;
+}
+
+.stat-screen {
+    width: 350px;
+    height: 700px;
+    background-color: #fdd000;
+    position: absolute;
+    left: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat {
+    width: 80%;
+    text-align: center;
+    background-color: #1E232B;
+    color: #f2efe2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 15px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.bar-color {
+    width: 100%;
+    height: 100%;
+    background-color: #1E232B;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
+}
+
+.filler {
+    background-color: #3B3F46;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
+    width: 80%;
+    height: 100%;
+}
